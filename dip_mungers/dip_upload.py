@@ -63,9 +63,9 @@ def main():
     if args.dev:
         hostname = ATOM_HOSTNAME_DEV
 
-    server_name = hostname.split(".")[0]
-    if server_name.startswith("arm-"):
-        server_name = server_name[4:]
+    server_name = hostname
+#    if server_name.startswith("arm-"):
+#        server_name = server_name[4:]
 
     local_dip_path = os.path.abspath(args.dip_path)
 
